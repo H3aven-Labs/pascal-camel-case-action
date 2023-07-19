@@ -43,19 +43,27 @@ Example: `hello-world` -> `helloWorld`
 
 ```yaml
 name: SomeWorkflow
+
 on: [push]
+
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
     steps:
       - id: string
-        uses: H3aven-Labs/pascal-camel-case-action@v1
+        uses: H3aven-Labs/pascal-camel-case-action@v1.0
         with:
-          string: hello_world
-          separator: "_"          
+          string: test-hello-world
+          separator: "-"
+          start: 1
+
       - id: step2
         run: echo ${{ steps.string.outputs.camelcase }}
+
+      - id: step3
+        run: echo ${{ steps.string.outputs.pascalcase }}
+
 ```
 
 This project is based on https://github.com/ASzc/change-string-case-action
