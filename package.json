@@ -1,0 +1,16 @@
+{
+  "name": "pascal-camel-case-action",
+  "version": "1.0.0",
+  "description": "(Pascal|camel) case string manipulation action for Github",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "H3aven",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^4.0.0"
+  }
+}

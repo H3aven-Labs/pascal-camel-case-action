@@ -1,0 +1,27 @@
+name: Pascal Camel Case
+author: H3aven
+description: Make a string PascalCase or camelCase
+branding:
+  icon: corner-down-right
+  color: gray-dark
+inputs:
+  string:
+    description: The input string
+    required: true
+  separator:
+    description: Separator string
+    required: true
+  start:
+    description: Start index
+    required: false
+  end:
+    description: End index
+    required: false
+outputs:
+  camelcase:
+    description: The input string converted to camelCase string
+  pascalcase:
+    description: The input string converted to PascalCase string  
+runs:
+  using: node16
+  main: index.js
